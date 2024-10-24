@@ -9,10 +9,10 @@ module.exports = {
       colors:{mainColor:'#FF5A00'},
       backgroundColor:{bgColor:'#FF5A00'},
       borderColor:{bdColor:'#FF5A00'},
-      fontFamily:{mainFont:['Poppins', 'sans-serif'],secondFont:["Redressed", 'cursive']}
+      fontFamily:{mainFont:['Poppins', 'sans-serif'],secondFont:["Redressed", 'cursive'],thirdFont:["Potta One", 'system-ui']}
     },
   },
   plugins: [
-    require('flowbite/plugin') // add this line
+    require('flowbite/plugin') 
   ],
 }

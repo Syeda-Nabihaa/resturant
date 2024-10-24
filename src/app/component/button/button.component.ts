@@ -11,4 +11,8 @@ export class ButtonComponent {
 @Input () buttonPx:string='';
 @Input () buttonPy:string='';
 @Input () buttonMt:string='';
+@Input () buttonMx:string='';
+@Input () buttonbgColor:string='';
+@Input () buttonColor:string='';
+
 }

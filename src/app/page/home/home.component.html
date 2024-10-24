@@ -27,9 +27,12 @@
             View Menu
           </button> -->
           <app-button
-          buttonText="View Menu"
-          buttonPx="px-4"
-          buttonPy="py-2"
+            buttonText="View Menu"
+            buttonPx="px-4"
+            buttonPy="py-2"
+            buttonMx="mx-5"
+            buttonbgColor="bg-bgColor"
+            buttonColor="text-white"
           ></app-button>
         </div>
       </div>
@@ -77,7 +80,63 @@
   </div>
 </div>
 
-<div class="mt-5">
+<!-- <div class="mt-5">
   <app-carousel></app-carousel>
+</div> -->
+
+<!-- <div class="max-w-sm mx-auto m-auto md:max-w-lg shadow-lg shadow-gray-500 mt-5">
+  <div *ngFor="let item of data">
+    <app-menu
+      [img]= "item.image"
+      [title]= "item.name"
+      [price]= "item.price"
+      [detail]= "item.description"
+    >
+  </app-menu>
+  </div>
+</div> -->
+<div class="bg-[#F3F3F3]">
+  <div class="text-center pt-24">
+    <h1 class="font-secondFont  text-5xl text-mainColor">Our Regular Foods</h1>
+    <p class="mt-4 px-16" >Eat the food you dream about at affordable prices. No<br>
+      need to come to us just call is.</p>
+  </div>
+  <div class="sm:flex sm:justify-center gap-8 items-center sm:flex-wrap">
+    <app-menu></app-menu>
+    <app-menu></app-menu>
+    <app-menu></app-menu>
+    <app-menu></app-menu>
+  </div>
 </div>
+
+<div class="mt-24  bg-white">
+  <div class="max-w-sm md:mx-32 mx-7">
+    <h1 class="text-3xl font-medium">GET THE BEST OFFER</h1>
+    <p class="text-gray-600 mt-4">Eat the food you dream about at affordable prices.  No
+      need to come to us just call us</p>
+  </div>
  
+ 
+ <div class=" mt-10 md:flex md:justify-center md:gap-24 w-full">
+  <div class="relative">
+  <img class="md:h-auto w-full " src="../../../assets/images/pizza2.png" alt="">
+  <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
+
+  <div class="absolute top-0 left-0 w-full h-full flex items-center mx-7">
+    <div class="text-left">
+      <h1 class="text-4xl font-bold text-white">Lunch Time</h1>
+      <p class="text-5xl mt-2 font-thirdFont font-bold text-mainColor">30% <span class="text-white">OFF</span></p>
+      <p class="mt-4 text-white">Get Vegetable Cheese Burger with Layer</p>
+      <a href="#" class="mt-4 inline-block bg-orange-500 text-black px-6 py-2 rounded-full">Order Now</a>
+    </div>
+
+  </div>
+</div>
+<div class="flex flex-col gap-6 md:mt-0 mt-10 md:mx-0">
+  <app-offer></app-offer>
+  <app-offer></app-offer>
+  <app-offer></app-offer>
+</div>
+
+ </div>
+</div>

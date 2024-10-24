@@ -10,6 +10,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './component/card/card.component';
 import { CarouselComponent } from './component/carousel/carousel.component';
+import { MenuComponent } from './component/cards/menu/menu.component';
+import { BlogComponent } from './component/cards/blog/blog.component';
+import { OfferComponent } from './component/cards/offer/offer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { CarouselComponent } from './component/carousel/carousel.component';
     HomeComponent,
     ButtonComponent,
     CardComponent,
-    CarouselComponent
+    CarouselComponent,
+    MenuComponent,
+    BlogComponent,
+    OfferComponent
   ],
   imports: [
     BrowserModule,
