@@ -14,7 +14,7 @@ interface menu {
 export class HomeComponent {
 data:menu[]=[];
 constructor(private dummyData:DummydataService){}
-ngOninit():void{
+ngOnInit():void{
   this.data = this.dummyData.food;
   console.log(this.data);
 }
