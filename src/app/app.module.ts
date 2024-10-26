@@ -13,6 +13,8 @@ import { CarouselComponent } from './component/carousel/carousel.component';
 import { MenuComponent } from './component/cards/menu/menu.component';
 import { BlogComponent } from './component/cards/blog/blog.component';
 import { OfferComponent } from './component/cards/offer/offer.component';
+import { ReviewComponent } from './component/cards/review/review.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { OfferComponent } from './component/cards/offer/offer.component';
     CarouselComponent,
     MenuComponent,
     BlogComponent,
-    OfferComponent
+    OfferComponent,
+    ReviewComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

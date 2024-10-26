@@ -58,6 +58,27 @@ export class DummydataService {
         description: "Delicious Rice Bowl with Vegetables order your yummy food now"
       }
     ]
+    
+    offer =[
+      {
+        image:"../../assets/images/img3.png",
+        name:"Spicy Burger",
+        price:"$49",
+        description:"Get Vegetable Cheese Burger With Layer"
+      },
+      {
+        image:"../../assets/images/img2.png",
+        name:"Spicy Pizza",
+        price:"$49",
+        description:"Get Vegetable Cheese Burger With Layer"
+      },
+      {
+        image:"../../assets/images/pasta.png",
+        name:"Spicy Pasta",
+        price:"$49",
+        description:"Get Vegetable Cheese Burger With Layer"
+      }
+    ]
   
   
 
