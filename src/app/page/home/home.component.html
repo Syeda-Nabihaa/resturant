@@ -133,9 +133,9 @@
   </div>
 
   <div
-    class="mt-10 flex md:flex-row md:p-10 flex-col justify-center gap-10 w-full"
+    class="mt-10 flex md:flex-row md:p-10 border border-black h-auto flex-col justify-center items-center gap-10 w-full"
   >
-    <div class="relative flex w-full h-auto">
+    <div class="relative border border-black flex w-4/5 min-h-full">
       <img
         class="w-full h-full"
         src="../../../assets/images/pizza2.png"
@@ -160,8 +160,8 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col gap-6 md:mx-0 w-full px-6">
-      <div *ngFor="let offer of offerData">
+    <div class="flex border border-black flex-col gap-6 md:mx-0 w-2/3 h-auto">
+      <div class="w-full h-auto" *ngFor="let offer of offerData">
         <app-offer
           [img]="offer.image"
           [name]="offer.name"
@@ -193,18 +193,24 @@
 
 
 
-<div class="w-full px-16 py-12">
+<div class="w-full border border-black px-16 py-12">
   <div class="md:mx-20 mt-8">
    <h1 class="text-5xl font-secondFont text-mainColor">Our Food Blog</h1>
    <p class="text-gray-400 mt-8">Eat the food you dream about at affordable prices.  No
     need to come to us just call is</p>
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:gap-12 lg:gap-0 gap-16 lg:grid-cols-3 place-items-center w-auto mt-6">
-  <!-- <div class="flex lg:flex-row flex-col justify-center gap-12 "> -->
-    <app-blog></app-blog>
-    <app-blog></app-blog>
-    <app-blog></app-blog>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 lg:gap-x-6 lg:gap-y-8 place-items-center mt-6"> 
+    <app-blog
+    buttonbgColor="bg-bgColor"
+    ></app-blog>
+    <app-blog
+    buttonbgColor="bg-black"
+    ></app-blog>
+    <app-blog
+     buttonbgColor="bg-black"
+    ></app-blog>
 </div>
+
 
 </div>
 
