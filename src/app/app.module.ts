@@ -15,6 +15,8 @@ import { BlogComponent } from './component/cards/blog/blog.component';
 import { OfferComponent } from './component/cards/offer/offer.component';
 import { ReviewComponent } from './component/cards/review/review.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { CarouselModule } from 'primeng/carousel';
+import { TagModule } from 'primeng/tag';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { FooterComponent } from './component/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    CarouselModule,
+    TagModule
   ],
   providers: [],
   bootstrap: [AppComponent]

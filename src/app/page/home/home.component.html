@@ -1,10 +1,10 @@
 
 
 <div class="bg-[#FFEEE5]">
-  <div class="relative h-screen flex items-center overflow-hidden">
-    <div
+  <div class="h-screen flex items-center overflow-hidden">
+    <!-- <div
       class="absolute bg-white z-10 rounded-full sm:w-[907px] sm:h-[907px] sm:-top-[396px] sm:left-[898px]"
-    ></div>
+    ></div> -->
     <!--home section-->
     <div
       class="flex flex-col sm:flex-row justify-center items-center w-full max-w-screen-lg mx-auto"
@@ -80,9 +80,23 @@
   </div>
 </div>
 
-<div class="w-full h-auto  py-16 px-16">
-  <app-carousel></app-carousel>
+<!--carousel-->
+<div class="border p-7">
+
+  <div class="card">
+    <p-carousel 
+    [value]="productData" 
+    [numVisible]="2" 
+    [numScroll]="2" 
+    [circular]="false" 
+    [responsiveOptions]="responsiveOptions">
+    <ng-template let-product pTemplate="item">
+      <app-card></app-card>
+    </ng-template>
+  </p-carousel>
 </div>
+</div>
+<!--carousel-->
 
 
 <div class="bg-[#F3F3F3] w-full px-8 py-2">
@@ -168,7 +182,7 @@
       <br />conectou a uma comunidade incrível de amantes de animais.
     </p>
   </div>
-  <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 border mt-7">
+  <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-7">
     <app-review image="../../../assets/images/user1.png"></app-review>
     <app-review image="../../../assets/images/user2.png"></app-review>
     <app-review image="../../../assets/images/user3.png"></app-review>
@@ -185,7 +199,7 @@
    <p class="text-gray-400 mt-8">Eat the food you dream about at affordable prices.  No
     need to come to us just call is</p>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center w-auto mt-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:gap-12 lg:gap-0 gap-16 lg:grid-cols-3 place-items-center w-auto mt-6">
   <!-- <div class="flex lg:flex-row flex-col justify-center gap-12 "> -->
     <app-blog></app-blog>
     <app-blog></app-blog>
@@ -204,7 +218,7 @@
     <p>$ 2 discount for your first order</p>
     <h3 class="text-xl font-medium">Join our newsletter and get updates</h3>
     <p>Join our email subscription now t o get updated on promotions and coupons</p>
-    <input class="mt-10 w-full rounded-lg p-3 border-none" type="text" placeholder="Your Email Address">
+    <input class="mt-10 w-full rounded-lg p-3 text-black border-none" type="text" placeholder="Your Email Address">
   </div>
  
 

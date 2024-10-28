@@ -1,16 +1,16 @@
-<div class="bg-white flex md:flex-row flex-col-reverse gap-6 h-full w-full">
-  <div class="md:mx-5 lg:w-2/3 md:w-3/5 w-full p-4">
+<div class="bg-white flex lg:flex-row flex-col-reverse gap-6  w-full">
+  <div class="lg:mx-5 lg:w-2/3 w-full p-4">
     <div class="flex flex-col gap-5">
-        <h1 class="font-secondFont text-3xl text-mainColor">
+        <h1 class="font-secondFont text-3xl text-mainColor  ">
             {{title}}
         </h1>
         <p class="">
            {{detail}}
         </p>
     </div>
-    <div class="mt-8 gap-2 flex flex-row justify-between">
+    <div class="mt-32  gap-2 flex flex-row justify-between">
       <p class="text-2xl font-medium">{{price}}</p>
-      <div class="flex gap-2">
+      <div class="flex  gap-2">
         <app-button
           buttonText="Cart"
           buttonPx="px-2"
@@ -30,9 +30,9 @@
       </div>
     </div>
   </div>
-  <div class="lg:w-1/3 md:w-2/5 h-auto">
+  <div class="lg:w-3/5 w-full h-full border ">
     <img
-      class="w-full md:h-full h-56 object-cover"
+      class="w-full md:h-96 h-72 object-cover"
       [src] ='img'
       alt=""
     />

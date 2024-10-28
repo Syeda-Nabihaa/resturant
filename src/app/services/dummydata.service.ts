@@ -29,6 +29,12 @@ export class DummydataService {
         price: "$14.99",
         description: "Vegetable cheese burger",
         img:"../../assets/images/burger2.png"
+      },
+      {
+        name: "Vegetable Cheese Burger",
+        price: "$14.99",
+        description: "Vegetable cheese burger",
+        img:"../../assets/images/burger2.png"
       }
     ]
     
@@ -79,6 +85,8 @@ export class DummydataService {
         description:"Get Vegetable Cheese Burger With Layer"
       }
     ]
+
+    
   
   
 
