@@ -1,28 +1,26 @@
 
 
-<div class="bg-[#FFEEE5]">
-  <div class="h-screen flex items-center overflow-hidden">
-    <!-- <div
-      class="absolute bg-white z-10 rounded-full sm:w-[907px] sm:h-[907px] sm:-top-[396px] sm:left-[898px]"
-    ></div> -->
+<div class="bg-[#FFEEE5] ">
+  <div class="h-screen flex items-center overflow-hidden w-full">
+  
     <!--home section-->
     <div
-      class="flex flex-col sm:flex-row justify-center items-center w-full max-w-screen-lg mx-auto"
+      class="flex flex-col sm:flex-row justify-center items-center w-full max-w-screen-lg 2xl:max-w-screen-2xl mx-auto "
     >
       <!--Text-->
-      <div class="flex-1 sm:mx-5 lg:mx-0 md:text-left text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4">
+      <div class="flex-1 w-full sm:mx-5 lg:mx-0 md:text-left text-center">
+        <h1 class="text-4xl md:text-5xl 2xl:text-8xl lg:text-6xl font-bold text-black mb-4">
           Good Food for<br />
           Good Moments.
         </h1>
-        <p class="text-lg md:text-xl text-gray-700 md:w-[498px] mb-3">
+        <p class="text-lg md:text-xl 2xl:text-3xl text-gray-700 md:w-[498px] mb-3">
           Aqui, você encontrará respostas para todas as suas dúvidas, desde a
           escolha da melhor ração até dicas essenciais para garantir o bem-estar
           do seu companheiro peludo.
         </p>
 
         <div class="flex md:justify-start justify-center items-center">
-          <p class="text-2xl font-medium">$14.99</p>
+          <p class="text-2xl 2xl:text-3xl font-medium">$14.99</p>
           <!-- <button class="bg-bgColor text-white px-4 py-2 rounded-md mx-5 w-32">
             View Menu
           </button> -->
@@ -39,7 +37,7 @@
 
       <img
         src="../../../assets/images/burger.png"
-        class="w-10 h-10 m-auto mt-5 mb-2"
+        class="w-20 h-20 m-auto mt-5 mb-2"
         alt=""
       />
 
@@ -48,7 +46,7 @@
         <img
           src="../../../assets/images/pizza.png"
           alt="Pizza"
-          class="relative z-10 lg:left-2 left-0 w-52 h-52 md:w-60 md:h-60 lg:w-80 lg:h-80"
+          class="relative z-10 lg:left-2 2xl:left-28 left-0 w-52 h-52 md:w-60 md:h-60 lg:w-80 lg:h-80 2xl:w-96 2xl:h-96"
         />
       </div>
     </div>
@@ -56,7 +54,7 @@
 
   <img
     src="../../../assets/images/pizza.png"
-    class="w-10 h-10 lg:mx-72 md:mx-32 mx-24"
+    class="w-20 h-20 lg:mx-72 md:mx-32 mx-24 2xl:mx-96"
     alt=""
   />
 
@@ -83,7 +81,7 @@
 <!--carousel-->
 <div class="border p-7">
 
-  <div class="card">
+  <div class="card ">
     <p-carousel 
     [value]="productData" 
     [numVisible]="2" 
@@ -124,44 +122,41 @@
 
 <!-- Get the best offer -->
 <div class="mt-24 bg-white">
-  <div class="max-w-sm md:mx-32 mx-7">
-    <h1 class="text-3xl font-medium">GET THE BEST OFFER</h1>
-    <p class="text-gray-600 mt-4">
-      Eat the food you dream about at affordable prices. No need to come to us
-      just call us
+  <div class="max-w-md md:max-w-lg lg:max-w-2xl mx-24 px-4">
+    <h1 class="text-2xl md:text-3xl font-medium text-center md:text-left">GET THE BEST OFFER</h1>
+    <p class="text-gray-600 mt-4 text-center md:text-left">
+      Eat the food you dream about at affordable prices. No need to come to us, just call us.
     </p>
   </div>
 
-  <div
-    class="mt-10 flex md:flex-row md:p-10 border border-black h-auto flex-col justify-center items-center gap-10 w-full"
-  >
-    <div class="relative border border-black flex w-4/5 min-h-full">
+  <div class="mt-10 flex md:flex-row md:p-10 flex-col justify-center gap-10 w-full">
+    <!-- Left Image Section -->
+    <div class="relative flex w-full md:w-2/3 lg:w-1/2 2xl:w-full h-64 md:h-auto mx-auto md:mx-0">
       <img
-        class="w-full h-full"
+        class="relative flex w-full h-auto object-cover"
         src="../../../assets/images/pizza2.png"
-        alt=""
+        alt="Pizza"
       />
-      <div
-        class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"
-      ></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent rounded-lg"></div>
 
-      <div class="absolute top-0 left-0 w-full h-full flex items-center mx-7">
-        <div class="text-left">
-          <h1 class="text-4xl font-bold text-white">Lunch Time</h1>
-          <p class="text-5xl mt-2 font-thirdFont font-bold text-mainColor">
+      <div class="absolute top-0 left-0 w-full h-full flex items-center px-4 md:px-8">
+        <div class="text-left 2xl:mx-7">
+          <h1 class="text-2xl md:text-4xl 2xl:text-7xl font-bold text-white">Lunch Time</h1>
+          <p class="text-3xl md:text-5xl 2xl:text-7xl mt-2 font-bold text-mainColor">
             30% <span class="text-white">OFF</span>
           </p>
-          <p class="mt-4 text-white">Get Vegetable Cheese Burger with Layer</p>
+          <p class="mt-4 text-white 2xl:text-3xl">Get Vegetable Cheese Burger with Layer</p>
           <a
             href="#"
-            class="mt-4 inline-block bg-orange-500 text-black px-6 py-2 rounded-full"
-            >Order Now</a
-          >
+            class="mt-4 inline-block bg-orange-500 text-white 2xl:px-12 2xl:py-6 px-4 py-2 md:px-6 md:py-2 rounded-full"
+          >Order Now</a>
         </div>
       </div>
     </div>
-    <div class="flex border border-black flex-col gap-6 md:mx-0 w-2/3 h-auto">
-      <div class="w-full h-auto" *ngFor="let offer of offerData">
+
+    <!-- Right Card Section -->
+    <div class="flex flex-col gap-6  w-full md:w-auto lg:w-1/2  2xl:h-auto p-4 md:p-6 ">
+      <div *ngFor="let offer of offerData">
         <app-offer
           [img]="offer.image"
           [name]="offer.name"
@@ -172,6 +167,8 @@
     </div>
   </div>
 </div>
+
+
 
 <!-- testimonials section -->
 <div class="w-full bg-[#F3F3F3] px-16 py-14">
@@ -199,7 +196,7 @@
    <p class="text-gray-400 mt-8">Eat the food you dream about at affordable prices.  No
     need to come to us just call is</p>
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 lg:gap-x-6 lg:gap-y-8 place-items-center mt-6"> 
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 2xl:gap-0  place-items-center mt-6"> 
     <app-blog
     buttonbgColor="bg-bgColor"
     ></app-blog>
@@ -219,8 +216,8 @@
 
 
 <!-- footer section -->
-<div class="bg-bgColor w-full text-white flex justify-evenly px-16 py-10 md:flex-row flex-col">
-  <div class="md:w-35 pt-5 mt-5">
+<div class="bg-bgColor  text-white flex justify-evenly  md:flex-row flex-col">
+  <div class="md:w-35 pt-5 mt-5 border border-red-700">
     <p>$ 2 discount for your first order</p>
     <h3 class="text-xl font-medium">Join our newsletter and get updates</h3>
     <p>Join our email subscription now t o get updated on promotions and coupons</p>
@@ -228,7 +225,7 @@
   </div>
  
 
-  <div>
-    <img class="md:mx-0 mx-auto md:mt-0 mt-6 " src="../../../assets/images/burger2.png" alt="">
+  <div class="relative">
+    <img class="md:mx-0 mx-auto md:mt-0 mt-6 w-full h-80" src="../../../assets/images/burger2.png" alt="">
   </div>
 </div>
