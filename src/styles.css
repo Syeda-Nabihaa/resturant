@@ -5,3 +5,18 @@
 
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+
+.p-carousel-next, .p-carousel-prev{
+    background-color: white;
+    border: 2px solid #FF5A00;
+    color: #FF5A00;
+    border-radius: 5px;
+    padding: 18px;
+    
+}
+.p-carousel-next:hover, .p-carousel-prev:hover{
+    background-color:#FF5A00;
+    color: white;
+
+}
+
