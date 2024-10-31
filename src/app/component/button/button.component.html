@@ -1,3 +1,4 @@
-<button [ngClass]="[buttonPx , buttonPy, buttonMt,buttonWidth, buttonMx,buttonbgColor, buttonColor]" class="rounded-md capitalize">
-    {{buttonText}}
+<button [ngClass]="[buttonPx , buttonPy, buttonMt,buttonWidth, buttonMx,buttonbgColor, buttonColor,textSize]" class="rounded-md capitalize">
+  <span>{{ buttonText }}</span>
+    <img *ngIf="buttonIcon" [src]="buttonIcon" alt="button icon" class="w-4 h-4" />
   </button>

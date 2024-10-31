@@ -1,11 +1,11 @@
 
 
-<div class="bg-[#FFEEE5] ">
-  <div class="h-screen flex items-center overflow-hidden w-full">
+<div class="bg-[#FFEEE5] sm:pt-5 pt-7 ">
+  <!-- <div class="h-screen flex items-center overflow-hidden w-full"> -->
   
     <!--home section-->
     <div
-      class="flex flex-col sm:flex-row justify-center items-center w-full max-w-screen-lg 2xl:max-w-screen-2xl mx-auto "
+      class="md:h-screen h-auto flex flex-col sm:flex-row justify-center items-center w-full max-w-screen-lg 2xl:max-w-screen-2xl mx-auto "
     >
       <!--Text-->
       <div class="flex-1 w-full sm:mx-5 lg:mx-0 md:text-left text-center">
@@ -50,13 +50,16 @@
         />
       </div>
     </div>
-  </div>
+ 
+
 
   <img
     src="../../../assets/images/pizza.png"
     class="w-20 h-20 lg:mx-72 md:mx-32 mx-24 2xl:mx-96"
     alt=""
   />
+
+</div>
 
   <!-- Chef Section Container -->
   <div class="relative flex justify-center items-center bg-[#FFEEE5] pt-16">
@@ -76,11 +79,11 @@
       <p class="text-lg mt-2">Chief Chef at Salad</p>
     </div>
   </div>
-</div>
+
 
 <!--carousel-->
-<div class="md:mx-2 lg:my-8 ">
-  <div class="card">
+<div class="border  md:p-8 lg:p-16">
+  <div class="card px-4">
     <p-carousel
       [value]="productData"
       [numVisible]="2"
@@ -88,12 +91,15 @@
       [circular]="false"
       [responsiveOptions]="responsiveOptions"
     >
-      <ng-template let-product pTemplate="item">
-        <app-card></app-card>
+      <ng-template  let-product pTemplate="item">
+        <app-card
+        class="m-2"
+        ></app-card>
       </ng-template>
     </p-carousel>
   </div>
 </div>
+
 <!--carousel-->
 
 
@@ -183,21 +189,26 @@
 
 
 <!-- testimonials section -->
-<div class="w-full bg-[#F3F3F3] px-16 py-14">
-  <div class=" pt-7">
+<div class="w-full bg-[#F3F3F3] py-5">
+  <div class=" px-4 pt-7">
     <h1 class="lg:text-7xl md:text-5xl text-3xl font-secondFont text-center text-mainColor">What They Say</h1>
-    <p class="md:w-full md:text-2xl text-xl text-center mt-5">
+    <p class="md:w-2/3 
+     md:text-2xl mx-auto text-lg text-center mt-5">
       O app não apenas me lembra das vacinas e consultas, mas também me
-      <br />conectou a uma comunidade incrível de amantes de animais.
+      conectou a uma comunidade incrível de amantes de animais.
     </p>
   </div>
-  <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-7">
+  <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 mt-7 px-10">
     <app-review image="../../../assets/images/user1.png"></app-review>
     <app-review image="../../../assets/images/user2.png"></app-review>
     <app-review image="../../../assets/images/user3.png"></app-review>
   </div>
 
-  <p class="mt-7 text-center text-mainColor font-medium">See All Reviews</p>
+  <div class="mt-8 flex justify-center gap-5">
+  <p class=" text-mainColor font-bold">See All Reviews</p>
+  <img src="../../../assets/svg/Arrow 4.svg" alt="">
+ 
+</div>
 </div>
 
 

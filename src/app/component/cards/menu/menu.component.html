@@ -1,4 +1,4 @@
-<div class="bg-white flex lg:flex-row flex-col-reverse gap-6">
+<div class="bg-white flex lg:flex-row  flex-col-reverse  gap-6">
   <div class="lg:mx-5 lg:w-2/3 w-full p-4">
     <div class="flex flex-col gap-5">
         <h1 class="font-secondFont text-2xl text-mainColor  ">
@@ -8,19 +8,21 @@
            {{detail}}
         </p>
     </div>
-    <div class="mt-32  gap-2 flex flex-row justify-between">
+    <div class="mt-28 gap-2 flex flex-row justify-between">
       <p class="text-2xl font-medium">{{price}}</p>
-      <div class="flex  gap-2">
+      <div class="flex gap-2">
         <app-button
-          buttonText="Cart"
+         
+          buttonIcon="../../../../assets/svg/Cart Large Minimalistic.svg"
           buttonPx="px-2"
           buttonPy="py-2"
           buttonbgColor="bg-bgColor"
           buttonColor="text-white"
+          textSize="text-2xl"
         >
         </app-button>
         <app-button
-          buttonText="cart"
+        buttonIcon="../../../../assets/svg/Heart.svg"
           buttonPx="px-2"
           buttonPy="py-2"
           buttonbgColor="bg-black"
